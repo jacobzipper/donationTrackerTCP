@@ -1,5 +1,6 @@
 import socket                # Import socket module
 import thread
+import os
 from cli import help, login, registration, locations, donations, maps
 from io import BytesIO
 
@@ -125,7 +126,7 @@ def newClient(clientsocket, addr):
 
 s = socket.socket()         # Create a socket object
 host = ''                   # Get local machine name
-port = 80                # Reserve a port for your service.
+port = os.environ['PORT']   # Reserve a port for your service.
 
 print 'Server started!'
 print 'Waiting for clients...'
