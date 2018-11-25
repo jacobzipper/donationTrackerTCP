@@ -124,9 +124,9 @@ def newClient(clientsocket, addr):
             clientsocket.send('INVALID COMMAND, CHECK \'help\' FOR VALID COMMANDS OR \'end\' THE CONNECTION\n')
     clientsocket.close()
 
-s = socket.socket()           # Create a socket object
-host = '0.0.0.0'              # Get local machine name
-port = os.environ.get('PORT') # Reserve a port for your service.
+s = socket.socket()                # Create a socket object
+host = '0.0.0.0'                   # Get local machine name
+port = int(os.environ.get('PORT')) # Reserve a port for your service.
 
 print 'Server started!'
 print 'Waiting for clients...'
