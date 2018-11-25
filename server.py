@@ -1,5 +1,6 @@
 import socket                # Import socket module
 import thread
+import sys
 import os
 from cli import help, login, registration, locations, donations, maps
 from io import BytesIO
