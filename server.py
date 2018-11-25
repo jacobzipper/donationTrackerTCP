@@ -127,7 +127,7 @@ def newClient(clientsocket, addr):
 
 s = socket.socket()                # Create a socket object
 host = '0.0.0.0'                   # Get local machine name
-port = int(os.environ.get('PORT')) # Reserve a port for your service.
+port = 3000                        # Reserve a port for your service.
 
 print 'Server started!'
 print 'Waiting for clients...'
